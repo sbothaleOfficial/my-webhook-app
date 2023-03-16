@@ -14,7 +14,7 @@ To use this application, follow these steps:
 `mvn clean compile exec:java -Dexec.mainClass="com.example.Main"`
 5. The application will start and listen for incoming webhook requests on port 8080. The ngrok URL will be displayed in the console output.
 6. To send a sample webhook request, run the following cURL command in a separate terminal window:
-   `curl -X POST -H "Content-Type: application/json" -d '{"name": "Suraj Bothale", "email": "sbothale@gmail.com", "message": "Hello World"}' https://<ngrok-url>/webhook`
+   `curl -X POST -H "Content-Type: application/json" -d '{"name": "Suraj Bothale", "email": "sbothale.official@gmail.com", "message": "Hello World"}' https://<ngrok-url>/webhook`
 7. The application will receive the webhook request and print the payload to the console.
 
 **About Webhooks**
