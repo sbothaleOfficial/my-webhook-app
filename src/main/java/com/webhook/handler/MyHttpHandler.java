@@ -1,4 +1,4 @@
-package com.webhook;
+package com.webhook.handler;
 
 import java.io.IOException;
 import java.io.InputStream;
