@@ -2,6 +2,13 @@
 
 This is a Java application that sets up a webhook listener and exposes a public endpoint using ngrok. The application uses Java 17, Apache HttpComponents library, and Maven for dependency management.
 
+**Prerequisites**
+
+* Java 17: You can download Java 17 from the official Java website [here](https://www.oracle.com/java/technologies/downloads/#jdk17).
+* Git: You can download Git from the official Git website [here](https://git-scm.com/downloads)
+* Maven: You can download Maven from the official Maven website [here](https://maven.apache.org/download.cgi).
+
+
 **Usage**
 
 To use this application, follow these steps:
