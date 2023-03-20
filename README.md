@@ -44,5 +44,13 @@ To install ngrok, follow these steps:
 
 
 
+### **Basic steps without NGROK** 
 
+`git clone git@github.com:sbothaleOfficial/my-webhook-app.git
+`
 
+`mvn clean compile exec:java -Dexec.mainClass="com.webhook.Main"
+`
+
+`curl -X POST -H "Content-Type: application/json" -d '{"name": "Suraj Bothale", "email": "sbothale.official@gmail.com", "message": "Hello World"}' http://localhost:8000/webhook
+`
