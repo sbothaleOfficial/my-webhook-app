@@ -63,3 +63,12 @@ To install ngrok, follow these steps:
 
 `curl -X POST -H "Content-Type: application/json" -d '{"name": "Suraj Bothale", "email": "sbothale.official@gmail.com", "message": "Hello World"}' http://localhost:8000/webhook
 `
+
+
+**cURL**:
+
+`curl -X POST -H "Content-Type: application/json" -d '{"name": "Suraj Bothale", "id": "123", "location": "Wani"}' http://localhost:8000/persons
+`
+
+`curl -X GET http://localhost:8000/persons/Suraj%20Bothale
+`

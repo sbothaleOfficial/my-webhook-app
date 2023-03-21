@@ -1,9 +1,12 @@
 package com.webhook;
 
-
+import com.sun.net.httpserver.HttpHandler;
 import com.webhook.listener.WebhookListener;
+import com.webhook.handler.*;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -16,8 +19,12 @@ public class Main {
                 System.err.println("Invalid port number, using default " + port);
             }
         }
-        WebhookListener.startServer(port);
+
+        Map<String, HttpHandler> handlers = new HashMap<>();
+        handlers.put("POST", new PostHandler());
+        handlers.put("GET", new GetHandler());
+
+        WebhookListener.startServer(port, handlers);
     }
 
 }
-
