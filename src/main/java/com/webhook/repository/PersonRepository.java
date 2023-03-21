@@ -11,9 +11,9 @@ public class PersonRepository {
     private static final List<Person> persons = new ArrayList<>();
 
     static {
-        persons.add(new Person("John Doe", "123", "New York"));
-        persons.add(new Person("Jane Doe", "456", "Los Angeles"));
-        persons.add(new Person("Alice Smith", "789", "Chicago"));
+        persons.add(new Person("Suraj Bothale", "123", "Wani"));
+        persons.add(new Person("Akshay Rajurkar", "456", "Chandigarh"));
+        persons.add(new Person("Harshal Parkhi", "789", "Chicago"));
     }
 
     public static List<Person> getPersons() {
